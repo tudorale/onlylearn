@@ -1,0 +1,275 @@
+.lessonContent {
+  z-index: -1 !important;
+  margin: 0 auto;
+  margin-top: 50px;
+  color: white;
+  width: 850px;
+}
+.boxmodel {
+  width: 600px;
+}
+@media only screen and (max-width: 800px) {
+  .boxmodel {
+    width: 100%;
+  }
+}
+
+.lessonContent h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-top: 100px;
+  animation: fromDown 200ms linear forwards;
+}
+.lessonContent h2 {
+  animation: fromDown 300ms linear forwards;
+}
+
+.lessonContent p {
+  text-align: start;
+  font-size: 1.2rem;
+  animation: fromDown 300ms linear forwards;
+  margin: 10px 0;
+}
+.lessonContent h3 {
+  font-weight: 300;
+  text-align: start;
+  font-size: 1.4rem;
+  animation: fromDown 300ms linear forwards;
+}
+@keyframes fromDown {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.lessonContent p span {
+  color: white;
+}
+.purple {
+  color: var(--hover) !important;
+}
+.inTag {
+  color: #50fa7b !important;
+}
+.inTagValue {
+  color: rgb(233, 245, 66) !important;
+  word-break: break-all;
+}
+.declaration {
+  color: #4c4c79 !important;
+}
+.comment {
+  color: #6272a4 !important;
+}
+.tag {
+  color: var(--hover) !important;
+}
+
+.prop {
+  color: #66d9ef !important;
+}
+.pseudo {
+  color: #ffb86c !important;
+}
+.url {
+  color: rgb(233, 245, 66) !important;
+}
+.value {
+  color: var(--hover) !important;
+}
+.element {
+  color: var(--hover) !important;
+}
+.class {
+  color: #50fa7b !important;
+}
+.thirthTag {
+  margin-left: 80px !important;
+}
+.fourthTag {
+  margin-left: 100px !important;
+}
+.id {
+  color: #50fa7b !important;
+}
+.imp {
+  color: #50fa7b !important;
+}
+
+p span {
+  color: white;
+}
+
+.frontTag {
+  margin-left: 40px !important;
+}
+
+.secondTag {
+  margin-left: 60px !important;
+}
+.style,
+.bc {
+  margin-left: 50px !important;
+}
+.styles {
+  margin-left: 60px !important;
+}
+
+.result {
+  background-color: #080b0f;
+  width: 100%;
+  border-radius: 10px;
+  height: 60px;
+  overflow: hidden;
+  border: none;
+}
+.whiteResult {
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+  height: 60px;
+  overflow: hidden;
+  border: none;
+}
+.exParagraph {
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px 10px;
+  margin-bottom: 50px;
+  background-color: #080b0f;
+}
+
+.exParagraph p {
+  text-align: start !important;
+}
+
+.resultMedium {
+  height: 280px !important;
+}
+.buttons {
+  display: flex;
+  justify-items: center;
+  justify-self: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.nextL {
+  width: 120px;
+  height: 35px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--main);
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 30px;
+  outline: none;
+  color: white;
+  transition: all 500ms linear;
+}
+.nextL:hover {
+  background-color: var(--hover);
+}
+
+.previous {
+  width: 150px;
+  height: 35px;
+  margin-top: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--main);
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  outline: none;
+  color: white;
+  margin-left: 20px;
+  transition: all 500ms linear;
+}
+.previous:hover {
+  background-color: var(--hover);
+}
+
+.practice {
+  width: 120px;
+  height: 35px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--main);
+  border: none;
+  border-radius: 5px;
+  margin-left: 20px;
+  outline: none;
+  color: white;
+  display: inline-block;
+  margin-top: 30px;
+  transition: all 500ms linear;
+}
+.practice:hover {
+  background-color: var(--hover);
+}
+.res {
+  text-align: start !important;
+}
+.mainTag {
+  text-align: start;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 890px) {
+  .lessonContent {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .lessonContent {
+    width: auto;
+    padding: 0px 50px;
+  }
+  .exParagraph {
+    width: auto !important;
+    padding: 20px 20px !important;
+    height: auto !important;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .lessonContent {
+    width: auto;
+    padding: 0px 20px;
+  }
+  .exParagraph,
+  .medium {
+    width: auto !important;
+    padding: 0px 10px;
+  }
+
+  .frontTag {
+    margin-left: 20px !important;
+  }
+
+  .secondTag {
+    margin-left: 30px !important;
+  }
+  .mainTag {
+    margin-left: 10px;
+  }
+  .style,
+  .bc {
+    margin-left: 30px !important;
+  }
+  .styles {
+    margin-left: 40px !important;
+  }
+}

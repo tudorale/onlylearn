@@ -1,0 +1,284 @@
+.courses {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  color: white;
+}
+.cNeed {
+  font-size: 1.15rem;
+  color: rgb(224, 224, 224);
+  position: relative;
+  width: 370px;
+  margin-top: -25px;
+}
+
+.courses .headline {
+  position: absolute;
+  top: 170px;
+  z-index: -1;
+  font-size: 1.3rem;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: white;
+  animation: courses 300ms 1 forwards linear;
+}
+@keyframes courses {
+  from {
+    margin-top: 50px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
+
+.coursesContent {
+  margin: 0 auto;
+  height: auto;
+  margin-top: 245px;
+  width: 650px;
+  position: relative;
+  z-index: -1;
+}
+.course-1,
+.course-2,
+.course-3,
+.course-4 {
+  animation: courses2 350ms 1 forwards linear;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #10131c;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  margin-top: 15px;
+}
+.course-1 {
+  animation: courses2 350ms 1 forwards linear;
+}
+.course-2 {
+  animation: courses2 450ms 1 forwards linear;
+}
+.course-3 {
+  animation: courses2 500ms 1 forwards linear;
+}
+.course-4 {
+  animation: courses2 600ms 1 forwards linear;
+}
+@keyframes courses2 {
+  from {
+    transform: translateY(130px);
+  }
+  to {
+    transform: translateY(0px);
+    margin-top: 15px;
+  }
+}
+
+.course-1 h2,
+.course-2 h2,
+.course-3 h2,
+.course-4 h2,
+.course-5 h2 {
+  margin-left: 15px;
+  margin-top: 15px;
+  position: absolute;
+}
+.course-1 h2 span,
+.course-2 h2 span,
+.course-3 h2 span,
+.course-4 h2 span,
+.course-5 h2 span {
+  color: var(--hover);
+  margin-right: 5px;
+}
+.arrow1,
+.arrow2,
+.arrow3,
+.arrow4,
+.arrow5 {
+  fill: white;
+  width: 27px;
+  position: relative;
+  left: 590px;
+  margin: 18px;
+  transform: rotate(-90deg);
+  transition: all 300ms linear;
+}
+
+.progress {
+  width: 35px;
+  height: 7px;
+  border-radius: 5px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  margin: 25px;
+  margin-right: 10px;
+  border-left: 10px solid var(--main);
+}
+.content1,
+.content2,
+.content3,
+.content4 {
+  display: none;
+  font-size: 1.25rem;
+  animation: fromTop 300ms linear forwards;
+  background-color: transparent;
+  height: auto;
+  flex-direction: column;
+  background-color: transparent;
+}
+.content1 p,
+.content2 p,
+.content3 p,
+.content4 p {
+  cursor: pointer;
+  color: white;
+  height: 15px;
+  margin-left: 15px;
+}
+
+.point {
+  width: 13px;
+  height: 13px;
+  background-color: white;
+  margin-left: 20px;
+  margin-top: 26px;
+  border-radius: 50%;
+}
+.htmlLesson,
+.cssLesson,
+.resLesson {
+  display: flex;
+}
+
+.remain {
+  font-size: 1.2rem;
+  margin-left: 28px;
+  margin-bottom: 0px;
+}
+
+@keyframes fromTop {
+  from {
+    transform: translateY(30px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.footerC {
+  width: 100%;
+  height: 150px;
+  background-color: #09090c;
+  color: white;
+  margin-top: 120px;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 700px) {
+  .coursesContent {
+    width: 500px;
+  }
+
+  .arrow1,
+  .arrow2,
+  .arrow3,
+  .arrow4,
+  .arrow5 {
+    fill: white;
+    width: 27px;
+    position: relative;
+    left: 440px;
+    margin: 18px;
+    transform: rotate(-90deg);
+    transition: all 300ms linear;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .coursesContent {
+    width: 420px;
+  }
+  .lError {
+    margin-bottom: 40px;
+  }
+  .arrow1,
+  .arrow2,
+  .arrow3,
+  .arrow4,
+  .arrow5 {
+    fill: white;
+    width: 27px;
+    position: relative;
+    left: 360px;
+    margin: 18px;
+    transform: rotate(-90deg);
+    transition: all 300ms linear;
+  }
+  .course-1 h2,
+  .course-2 h2,
+  .course-3 h2,
+  .course-4 h2,
+  .course-5 h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .coursesContent {
+    width: 350px;
+  }
+  .arrow1,
+  .arrow2,
+  .arrow3,
+  .arrow4,
+  .arrow5 {
+    fill: white;
+    width: 27px;
+    position: relative;
+    left: 295px;
+    margin: 18px;
+    transform: rotate(-90deg);
+    transition: all 300ms linear;
+  }
+  .course-1 h2,
+  .course-2 h2,
+  .course-3 h2,
+  .course-4 h2,
+  .course-5 h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .coursesContent {
+    width: 300px;
+  }
+  .cNeed {
+    width: 300px;
+  }
+  .arrow1,
+  .arrow2,
+  .arrow3,
+  .arrow4,
+  .arrow5 {
+    fill: white;
+    width: 27px;
+    position: relative;
+    left: 250px;
+    margin: 18px;
+    transform: rotate(-90deg);
+    transition: all 300ms linear;
+  }
+  .course-1 h2,
+  .course-2 h2,
+  .course-3 h2,
+  .course-4 h2,
+  .course-5 h2 {
+    font-size: 1.4rem;
+  }
+}

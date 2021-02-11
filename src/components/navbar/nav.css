@@ -1,0 +1,201 @@
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: #10131c;
+  display: flex;
+  color: white;
+  position: absolute;
+  top: 0;
+  z-index: 990;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.logo {
+  margin-left: 20px;
+  margin-top: -7px;
+  display: flex;
+}
+.logo h2 {
+  cursor: pointer;
+}
+.links {
+  position: absolute;
+  right: 0;
+  display: flex;
+  z-index: 999 !important;
+  flex-direction: row;
+}
+.links p {
+  font-size: 1.2rem;
+  padding-top: 17px;
+}
+.loading {
+  width: 0%;
+  height: 3px;
+  position: fixed;
+  top: 0;
+  transition: all 500ms linear;
+  z-index: 999;
+  background-color: var(--main);
+}
+.links .c,
+.links .a,
+.links .b,
+.links .g {
+  background-color: transparent;
+  width: 100px;
+  height: 79px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  top: -19px;
+  transition: all 300ms ease;
+}
+.links .c:hover,
+.links .a:hover,
+.links .b:hover,
+.links .g:hover {
+  transition: all 300ms inherit;
+  background-color: #181b29;
+}
+
+.navButton:hover {
+  background-color: var(--hover);
+}
+
+.hamburger {
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  cursor: pointer;
+  width: 35px;
+  height: 25px;
+  top: 17px;
+  display: none;
+  margin-right: 25px;
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 35px;
+  border-radius: 25px;
+  height: 3px;
+  position: absolute;
+  background-color: white;
+}
+.line2 {
+  top: 10px;
+  transition: all 300ms linear;
+}
+
+.line3 {
+  top: 20px;
+  transition: all 300ms linear;
+}
+.line1 {
+  transition: all 300ms linear;
+}
+
+@media only screen and (max-width: 650px) {
+  .hamburger {
+    display: block;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+  }
+  .links {
+    flex-direction: column;
+    width: 320px;
+    height: 100vh;
+    display: none;
+    animation: fromLeft 500ms linear;
+    z-index: 999;
+    position: fixed !important;
+    left: 0;
+    transition: all 600ms linear;
+    top: 60px !important;
+    background-color: #10131c;
+  }
+  @keyframes fromLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+  .links p {
+    font-size: 1.5rem;
+    position: relative;
+    padding-left: 7px;
+    top: -23px;
+    text-align: start;
+  }
+
+  .links .c:hover,
+  .links .a:hover,
+  .links .b:hover,
+  .links .g:hover {
+    background-color: transparent;
+  }
+  .links .a {
+    margin-top: 70px;
+  }
+
+  .links .c,
+  .links .a,
+  .links .b,
+  .links .g {
+    background-color: transparent;
+    width: 70px;
+    height: 19px;
+    border-left: 4px solid var(--main);
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    top: 120px;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    transition: all 300ms ease;
+  }
+  .links .b {
+    margin-top: 50px;
+  }
+  .links .g {
+    position: relative;
+    top: 130px;
+  }
+  .navButton {
+    position: absolute;
+    top: 320px;
+    margin-top: 20px;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.navButton {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-right: 25px;
+  padding-top: 5px;
+  width: 120px;
+  height: 30px;
+  margin-top: 13px;
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  color: white;
+  background-color: var(--main);
+  cursor: pointer;
+  transition: all 300ms ease;
+}

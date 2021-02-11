@@ -1,0 +1,48 @@
+.privacyContainer {
+  color: white;
+  position: absolute;
+  left: 20px;
+  margin-bottom: 50px;
+  top: 80px;
+  z-index: -1;
+  animation: fromLeftP 350ms linear forwards;
+}
+.privacyContainer p {
+  font-size: 1.1rem;
+}
+@keyframes fromLeftP {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.privacyContainer p {
+  padding-right: 100px;
+}
+.privacyContainer p a {
+  color: var(--hover);
+}
+.privacyContainer h1 {
+  padding-right: 100px;
+}
+.privacyContainer h2 {
+  padding-right: 100px;
+}
+
+@media only screen and (max-width: 650px) {
+  .privacyContainer h1 {
+    padding-right: 50px;
+    font-size: 1.3rem;
+  }
+  .privacyContainer h2 {
+    padding-right: 50px;
+    font-size: 1.2rem;
+  }
+  .privacyContainer p {
+    padding-right: 50px;
+  }
+}

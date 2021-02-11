@@ -1,0 +1,66 @@
+.aboutPage {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  color: white;
+}
+.aboutContent {
+  z-index: -1;
+  position: relative;
+  top: 100px;
+  margin: 0 auto;
+  text-align: center;
+  width: 800px;
+}
+
+.aboutText {
+  line-height: 30px;
+}
+
+.aboutText h2 {
+  font-size: 2.1rem;
+  color: white;
+  text-align: center;
+  animation: about 400ms 1 forwards ease-in-out;
+}
+@keyframes about {
+  from {
+    transform: translateY(60px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+.aboutText p {
+  margin-top: 30px;
+  font-size: 1.25rem;
+  animation: about 500ms 1 forwards ease-in-out;
+  color: rgb(230, 230, 230);
+}
+
+.aboutText2 {
+  margin-top: 70px;
+}
+.aboutText2 h2 {
+  animation: about 400ms 1 forwards ease-in-out;
+
+  text-align: center;
+  color: rgb(231, 231, 231);
+  font-size: 2.1rem;
+}
+.aboutText2 p {
+  animation: about 500ms 1 forwards ease-in-out;
+
+  margin-top: 20px;
+  font-size: 1.25rem;
+  line-height: 30px;
+  color: rgb(230, 230, 230);
+}
+
+@media only screen and (max-width: 850px) {
+  .aboutContent {
+    width: auto;
+    padding: 0px 20px;
+  }
+}

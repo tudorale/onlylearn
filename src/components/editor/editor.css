@@ -1,0 +1,173 @@
+.editor-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.editor-nav {
+  width: 100%;
+  height: 60px;
+  background-color: #10131c;
+  position: absolute;
+  display: block;
+  z-index: 999;
+}
+
+.cm-s-dracula.CodeMirror,
+.CodeMirror-gutter,
+.cm-s-dracula {
+  background-color: #10131c !important;
+}
+
+.CodeMirror-linenumber {
+  color: #626683 !important;
+}
+.main-editor {
+  display: block;
+}
+.fullscreen {
+  height: 100vh !important;
+  margin-top: 0px !important;
+}
+.CodeMirror-code {
+  word-break: break-all;
+  line-break: loose;
+}
+.CodeMirror {
+  height: 80vh;
+  margin-top: 100px;
+  font-size: 1.35rem;
+  border-radius: 10px;
+}
+
+.cm-tag,
+.cm-keyword,
+.cm-number,
+.cm-operator,
+.cm-atom {
+  color: var(--hover) !important;
+}
+
+.cm-bracket {
+  color: white !important;
+}
+
+.editor-result {
+  margin-bottom: 50px;
+  height: 80vh;
+  margin-top: 100px;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  display: none;
+
+  background-color: white;
+}
+
+.first-block {
+  display: flex;
+  position: absolute;
+  left: 0;
+  width: 190px;
+  justify-content: space-around;
+}
+.second-block {
+  display: flex;
+  position: absolute;
+  right: 0;
+  width: 120px;
+  justify-content: space-around;
+  margin-right: 5px;
+}
+.fullscreen-block {
+  position: absolute;
+  right: 0;
+  flex-direction: row;
+  margin-right: 25px;
+  bottom: 0;
+  display: none;
+  z-index: 4;
+}
+
+.item9,
+.item8,
+.item10 {
+  filter: invert(40%);
+}
+
+.item9,
+.item4 {
+  display: none;
+}
+
+.item svg {
+  width: 40px;
+  margin: 7px;
+  stroke: white;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.item svg:hover {
+  width: 45px;
+}
+
+.effect {
+  opacity: 0.9;
+  width: 250px;
+  height: 450px;
+  background-color: #080808;
+  z-index: 99;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.info p,
+.info h2 {
+  position: relative;
+  z-index: 999;
+  top: 10px;
+}
+.close {
+  color: white;
+  font-size: 1.6rem;
+  position: absolute;
+  z-index: 999;
+  right: 0;
+  cursor: pointer;
+  transition: all 300ms ease;
+  margin-right: 20px;
+  top: 0;
+  margin-top: 10px;
+}
+.close:hover {
+  font-size: 1.8rem;
+}
+
+.info p {
+  font-size: 1.05rem;
+}
+.info {
+  width: 250px;
+  height: 450px;
+  z-index: 999;
+  border-radius: 10px;
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 60px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .CodeMirror {
+    margin-bottom: 50px;
+  }
+}

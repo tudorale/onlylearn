@@ -1,0 +1,36 @@
+{
+  "short_name": "OnlyLearn",
+  "name": "OnlyLearn - Learn with practice",
+  "description": "Learn to make your own website with free lessons and and a special editor for practice.",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "500x500",
+      "purpose":"maskable"
+    }
+   
+  ],
+  "start_url": "/",
+  "background_color": "#0e0f13",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#0e0f13",
+  "shortcuts": [
+    {
+      "name": "Learn HTML and CSS",
+      "short_name": "Learn",
+      "description": "Learn HTML and CSS with over 60 lessons",
+      "url": "/courses",
+      "icons": [{ "src": "/logo.png", "sizes": "500x500" }]
+    },
+    {
+      "name": "Account & Account Settings",
+      "short_name": "Account",
+      "description": "Manage your OnlyLearn account",
+      "url": "/account",
+      "icons": [{ "src": "/logo.png", "sizes": "500x500" }]
+      
+    }
+  ]
+}

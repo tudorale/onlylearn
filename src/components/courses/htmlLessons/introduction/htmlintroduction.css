@@ -1,0 +1,170 @@
+.boilerplate {
+  width: 450px;
+  height: 455px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  padding-top: 20px;
+  margin-bottom: 50px;
+  background-color: #06060c;
+}
+
+.frontTag {
+  margin-left: 40px !important;
+}
+
+.secondTag {
+  margin-left: 60px !important;
+}
+
+.purple {
+  color: var(--hover) !important;
+}
+.inTag {
+  color: rgb(17, 224, 110) !important;
+}
+.inTagValue {
+  color: rgb(233, 245, 66) !important;
+  word-break: break-all;
+}
+.declaration {
+  color: #4c4c79 !important;
+}
+.comment {
+  color: #353555 !important;
+}
+.tag {
+  color: var(--hover) !important;
+}
+
+p span {
+  color: white;
+}
+
+p span {
+  color: white;
+}
+
+.frontTag {
+  margin-left: 40px !important;
+}
+
+.secondTag {
+  margin-left: 60px !important;
+}
+.style,
+.bc {
+  margin-left: 50px !important;
+}
+.styles {
+  margin-left: 60px !important;
+}
+.prop {
+  color: #5c5c91 !important;
+}
+.url {
+  color: #84f800 !important;
+}
+.value {
+  color: rgb(3, 179, 179) !important;
+}
+.element {
+  color: rgb(0, 117, 226) !important;
+}
+.class {
+  color: #84f800 !important;
+}
+.thirthTag {
+  margin-left: 80px !important;
+}
+.fourthTag {
+  margin-left: 100px !important;
+}
+.id {
+  color: #fd006a !important;
+}
+.imp {
+  color: crimson !important;
+}
+
+.boilerplate p {
+  text-align: start !important;
+  margin-left: 30px !important;
+}
+.boilerplate p span {
+  color: white;
+}
+
+.explanation p {
+  text-align: start;
+}
+
+.sourceHtml {
+  margin-top: 100px;
+  font-size: 1.05rem;
+}
+.sourceHtml a {
+  color: #7c54aa;
+}
+
+@media only screen and (max-width: 550px) {
+  .boilerplate {
+    width: 350px;
+  }
+  .boilerplate p {
+    margin-left: -10px;
+  }
+
+  .boilerplate p:nth-child(3) {
+    color: rgb(233, 87, 87);
+    margin-left: 15px;
+  }
+  .boilerplate p:nth-child(4) {
+    margin-left: 30px;
+  }
+  .boilerplate p:nth-child(5) {
+    color: rgb(233, 87, 87);
+    margin-left: 30px;
+  }
+  .boilerplate p:nth-child(6) {
+    margin-left: 15px;
+  }
+  .boilerplate p:nth-child(7) {
+    margin-left: 15px;
+  }
+  .boilerplate p:nth-child(8) {
+    color: rgb(233, 87, 87);
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .boilerplate {
+    width: 280px;
+  }
+  .boilerplate p {
+    margin-left: -20px;
+  }
+
+  .boilerplate p:nth-child(3) {
+    color: rgb(233, 87, 87);
+    margin-left: 0px;
+  }
+  .boilerplate p:nth-child(4) {
+    margin-left: 15px;
+  }
+  .boilerplate p:nth-child(5) {
+    color: rgb(233, 87, 87);
+    margin-left: 15px;
+  }
+  .boilerplate p:nth-child(6) {
+    margin-left: 0px;
+  }
+  .boilerplate p:nth-child(7) {
+    margin-left: 0px;
+  }
+  .boilerplate p:nth-child(8) {
+    color: rgb(233, 87, 87);
+    margin-left: 0px;
+  }
+}

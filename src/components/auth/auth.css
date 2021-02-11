@@ -1,0 +1,583 @@
+.notification {
+  color: white;
+  font-size: 1.1rem;
+  background-color: #13181f;
+  width: fit-content;
+  border-radius: 5px;
+  border-bottom: 5px solid var(--main);
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 15px;
+  z-index: 999;
+  animation: notification 500ms linear 1 forwards;
+  display: none;
+}
+.notification p {
+  padding: 20px;
+  padding-bottom: 5px;
+  padding-top: 30px;
+}
+.notification .closeN {
+  cursor: pointer;
+  float: right;
+  margin: 6px;
+}
+.notification .closeN .l {
+  width: 25px;
+  height: 2.3px;
+  border-radius: 10px;
+  background-color: #fff;
+  opacity: 0.9;
+  margin-top: 10px;
+  position: relative;
+}
+
+.notification .closeN .l1 {
+  transform: rotate(45deg);
+}
+
+.notification .closeN .l2 {
+  top: -12px;
+  transform: rotate(-45deg);
+}
+
+@keyframes notification {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+/* ////////////////////////////////// */
+
+.loginContent {
+  width: 330px;
+  height: 550px;
+  padding: 20px;
+  position: absolute;
+  top: 330px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background-color: #080b0f;
+}
+
+.spin {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 5px solid #1d1e27;
+  border-top: 5px solid var(--main);
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+  margin-left: 20px;
+  display: none;
+  position: relative;
+  top: 5px;
+}
+
+.spin2 {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 5px solid #1d1e27;
+  border-top: 5px solid var(--main);
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+  margin-left: 20px;
+  display: none;
+  position: relative;
+  top: 5px;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loginContent h2 {
+  color: white;
+  font-size: 2.3rem;
+  position: relative;
+  text-align: center;
+  top: 0px;
+}
+.user {
+  display: flex;
+  flex-direction: column;
+  margin-top: -25px;
+}
+.user label {
+  font-size: 1.2rem;
+  cursor: initial;
+  transition: all 200ms linear;
+  position: relative;
+  top: 50px;
+  left: 10px;
+  width: 100px;
+  color: #989caf;
+}
+.user input {
+  border: none;
+  outline: none;
+  width: 305px;
+  color: white;
+  margin-top: 10px;
+  padding: 20px 10px 10px 10px;
+  font-size: 1.1rem;
+  transition: all 200ms linear;
+  background-color: #13141a;
+  margin-bottom: 30px;
+  border-radius: 2px;
+}
+
+.pass {
+  position: relative;
+  display: flex;
+  top: -10px;
+  flex-direction: column;
+}
+.pass label {
+  font-size: 1.2rem;
+  cursor: initial;
+  transition: all 200ms linear;
+  position: relative;
+  top: 50px;
+  left: 10px;
+  width: 100px;
+  color: #989caf;
+}
+.pass input {
+  border: none;
+  outline: none;
+  width: 265px;
+  color: white;
+  margin-top: 10px;
+  padding: 20px 50px 10px 10px;
+  font-size: 1.1rem;
+  transition: all 200ms linear;
+  background-color: #13141a;
+  margin-bottom: 30px;
+  border-radius: 2px;
+}
+.eyeOpen {
+  width: 28px;
+  position: absolute;
+  top: 49px;
+  left: 285px;
+  cursor: pointer;
+  fill: #989caf;
+}
+.eyeClosed {
+  width: 28px;
+  position: absolute;
+  cursor: pointer;
+  top: 49px;
+  left: 285px;
+  fill: #989caf;
+  display: none;
+}
+
+.need {
+  font-size: 1.1rem;
+  color: #7e8192;
+  text-align: center;
+  position: relative;
+  top: -30px;
+}
+
+.forgot {
+  font-size: 1.1rem;
+  color: #989caf;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: underline;
+  position: relative;
+  top: -30px;
+}
+
+.signuptext {
+  margin-left: 5px;
+  color: #989caf;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.sButton {
+  position: relative;
+  top: -25px;
+  background-color: var(--main);
+  width: 100%;
+  height: 35px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  color: white;
+  border: none;
+  transition: all 500ms ease;
+}
+.sButton:hover {
+  background-color: var(--hover);
+}
+
+.signinError {
+  position: relative;
+  font-size: 1.15rem;
+  color: #7e8192;
+  top: -30px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 410px) {
+  .loginContent {
+    width: 300px;
+  }
+
+  .user input {
+    width: 280px;
+  }
+  .pass input {
+    width: 240px;
+  }
+  .eyeClosed {
+    left: 265px;
+  }
+  .eyeOpen {
+    left: 265px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .loginContent {
+    width: 270px;
+  }
+
+  .user input {
+    width: 250px;
+  }
+  .pass input {
+    width: 210px;
+  }
+  .eyeClosed {
+    left: 235px;
+  }
+  .eyeOpen {
+    left: 235px;
+  }
+}
+
+/* register page */
+
+.registerContent {
+  width: 330px;
+  height: 540px;
+  border-radius: 5px;
+  padding: 20px;
+  position: absolute;
+  top: 330px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #080b0f;
+}
+
+.registerContent h2 {
+  color: white;
+  font-size: 2.3rem;
+  position: relative;
+  text-align: center;
+  top: -15px;
+}
+
+.rPass {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -75px;
+}
+.emailLabel {
+  font-size: 1.2rem;
+  cursor: initial;
+  transition: all 200ms linear;
+  position: relative;
+  top: 50px;
+  left: 10px;
+  width: 100px;
+  color: #989caf;
+}
+.passLabel {
+  font-size: 1.2rem;
+  cursor: initial;
+  transition: all 200ms linear;
+  position: relative;
+  top: 50px;
+  left: 10px;
+  width: 100px;
+  color: #989caf;
+}
+
+.rEmail input {
+  border: none;
+  outline: none;
+  width: 305px;
+  color: white;
+  margin-top: 10px;
+  padding: 20px 10px 10px 10px;
+  font-size: 1.1rem;
+  transition: all 200ms linear;
+  background-color: #13141a;
+  margin-bottom: 30px;
+  border-radius: 2px;
+}
+.rPass input {
+  border: none;
+  outline: none;
+  width: 265px;
+  color: white;
+  margin-top: 10px;
+  padding: 20px 50px 10px 10px;
+  font-size: 1.1rem;
+  transition: all 200ms linear;
+  background-color: #13141a;
+  margin-bottom: 30px;
+  border-radius: 2px;
+}
+
+.rEmail {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -50px;
+}
+
+.signUpButton {
+  position: relative;
+  top: -90px;
+  background-color: var(--main);
+  width: 100%;
+  height: 35px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  color: white;
+  border: none;
+  transition: all 500ms ease;
+}
+.signUpButton:hover {
+  background-color: var(--hover);
+}
+.eyeOpenR,
+.eyeClosedR {
+  width: 28px;
+  position: absolute;
+  top: 49px;
+  left: 285px;
+  cursor: pointer;
+  fill: #989caf;
+}
+.eyeClosedR {
+  display: none;
+}
+
+.have {
+  position: relative;
+  text-align: center;
+  top: -100px;
+  font-size: 1.15rem;
+  color: #7e8192;
+}
+.aAccount {
+  margin-left: 5px;
+  color: #989caf;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.supError {
+  position: relative;
+  font-size: 1.15rem;
+  color: #7e8192;
+  top: -100px;
+  text-align: center;
+}
+.agreed {
+  position: relative;
+  font-size: 1.15rem;
+  color: #7e8192;
+  text-align: center;
+  top: -100px;
+}
+.agreed a {
+  color: var(--hover);
+}
+
+@media only screen and (max-width: 410px) {
+  .registerContent {
+    width: 300px;
+  }
+
+  .rEmail input {
+    width: 280px;
+  }
+  .rPass input {
+    width: 240px;
+  }
+
+  .eyeOpenR,
+  .eyeClosedR {
+    left: 260px;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .registerContent {
+    width: 270px;
+  }
+
+  .rEmail input {
+    width: 250px;
+  }
+  .rPass input {
+    width: 210px;
+  }
+
+  .eyeOpenR,
+  .eyeClosedR {
+    left: 225px;
+  }
+  .aAccount {
+    display: inline-block;
+  }
+}
+/* RECOVER PAGE */
+
+.recoverContent {
+  width: 350px;
+  height: 530px;
+
+  position: absolute;
+  top: 330px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background-color: #080b0f;
+  color: white;
+  padding: 20px;
+}
+
+.recoverContent h2 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.recoverContent p {
+  font-size: 1.1rem;
+}
+
+.resetPass {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 0px;
+  width: 280px;
+}
+.resetPass label {
+  font-size: 1.2rem;
+  cursor: initial;
+  transition: all 200ms linear;
+  position: relative;
+  top: 50px;
+  left: 10px;
+  width: 100px;
+  color: #989caf;
+}
+.resetPass input {
+  border: none;
+  outline: none;
+  width: 330px;
+  color: white;
+  margin-top: 10px;
+  padding: 20px 10px 10px 10px;
+  font-size: 1.1rem;
+  transition: all 200ms linear;
+  background-color: #13141a;
+  border-radius: 2px;
+}
+
+.recoverContent button {
+  position: relative;
+  top: 10px;
+  background-color: var(--main);
+  width: 100%;
+  height: 40px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  color: white;
+  border: none;
+  transition: all 500ms ease;
+}
+
+.recoverContent button:hover {
+  background-color: var(--hover);
+}
+
+.recoverStatus {
+  display: none;
+  color: #989caf;
+}
+
+.backTo {
+  color: #989caf;
+  position: absolute;
+  top: 520px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 430px) {
+  .recoverContent {
+    width: 320px;
+    height: 560px;
+  }
+  .backTo {
+    top: 550px;
+  }
+  .resetPass input {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .recoverContent {
+    width: 270px;
+  }
+  .backTo {
+    top: 550px;
+  }
+  .resetPass input {
+    width: 250px;
+  }
+}

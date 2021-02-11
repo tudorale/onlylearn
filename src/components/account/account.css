@@ -1,0 +1,336 @@
+.spinnerInside {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 5px solid #1d1e27;
+  border-top: 5px solid var(--main);
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+  margin: 40px;
+  margin-left: 20px;
+  position: relative;
+  top: 60px;
+  display: block;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.notSignedIn {
+  color: white;
+  font-size: 1.2rem;
+  width: 700px;
+  margin: 40px;
+  display: none;
+  margin-left: 20px;
+  position: relative;
+  top: 60px;
+  animation: fromTop 500ms linear forwards;
+}
+.notSignedIn button {
+  display: block;
+  height: 35px;
+  font-size: 1.1rem;
+  color: white;
+  margin-top: 20px;
+  width: 120px;
+  background-color: var(--main);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 350ms ease;
+}
+.notSignedIn button:hover {
+  background-color: var(--hover);
+}
+
+@media only screen and (max-width: 730px) {
+  .notSignedIn {
+    width: auto;
+  }
+}
+
+.settings .signedIn {
+  color: white;
+  margin: 40px;
+  margin-left: 20px;
+  position: relative;
+  top: 50px;
+  display: none;
+}
+.signedIn h1 {
+  animation: fromTop 300ms linear forwards;
+}
+.signedIn h2 {
+  animation: fromTop 350ms linear forwards;
+}
+.settings .signedIn p {
+  font-size: 1.2rem;
+  animation: fromTop 400ms linear forwards;
+}
+
+.settings .signedIn p:nth-child(2) {
+  margin-top: 40px;
+}
+
+.settingsDropDown {
+  font-size: 1.4rem;
+  display: flex;
+  margin-top: 40px;
+}
+
+.settingsDropDown svg {
+  stroke: white;
+  margin-right: 10px;
+  margin-top: 0px;
+  width: 30px;
+}
+.accountSettings {
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+}
+.changeEmail {
+  display: flex;
+  width: 160px;
+  cursor: pointer;
+  height: 25px;
+  margin-top: 25px;
+}
+.changeEmail p {
+  margin-top: -25px;
+  height: 0px;
+}
+.changeEmail .arrowDn {
+  stroke: white !important;
+  width: 30px;
+  position: relative;
+  top: 16.5px;
+  transform: rotate(-90deg);
+}
+
+.changePassword {
+  display: flex;
+  cursor: pointer;
+  height: 25px;
+  margin-top: 20px;
+  width: 200px;
+}
+.changePassword p {
+  margin-top: -25px;
+  height: 0px;
+}
+.changePassword .arrowDn2 {
+  stroke: white !important;
+  width: 30px;
+  position: relative;
+  top: 16.5px;
+  transform: rotate(-90deg);
+}
+
+.deleteAccount {
+  margin-top: 20px;
+  display: flex;
+  cursor: pointer;
+  width: 170px;
+  margin-bottom: 30px;
+  height: 25px;
+}
+.deleteAccount p {
+  margin-top: -25px;
+  height: 0px;
+}
+.deleteAccount .arrowDn3 {
+  stroke: white !important;
+  width: 30px;
+  position: relative;
+  top: 17px;
+  transform: rotate(-90deg);
+}
+
+.emailContent {
+  flex-direction: column;
+  position: relative;
+  top: 5px;
+  display: none;
+  margin-bottom: 30px;
+}
+
+.emailContent label {
+  font-size: 1.1rem;
+  cursor: initial;
+  transition: all 200ms linear;
+  position: relative;
+  top: 48px;
+  left: 10px;
+  color: #ccc;
+  width: 100px;
+}
+.emailContent input {
+  border: none;
+  outline: none;
+  width: 240px;
+  color: white;
+  margin-top: 10px;
+  padding: 20px 10px 10px 10px;
+  font-size: 1.1rem;
+  transition: all 200ms linear;
+  background-color: #151824;
+  margin-bottom: 30px;
+  border-radius: 2px;
+}
+
+.changeButton {
+  width: 100px;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--main);
+  border: none;
+  height: 35px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 500ms ease;
+  outline: none;
+}
+
+.changeButton:hover {
+  background-color: var(--hover);
+}
+
+.emailStatus,
+.passwordStatus,
+.deleteStatus {
+  display: none;
+  margin: -10px 0px 15px 0px;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.passwordContent {
+  flex-direction: column;
+  position: relative;
+  top: 5px;
+  display: none;
+  margin-bottom: 30px;
+}
+
+.passwordContent label {
+  font-size: 1.1rem;
+  cursor: initial;
+  transition: all 200ms linear;
+  position: relative;
+  top: 48px;
+  left: 10px;
+  color: #ccc;
+  width: 150px;
+}
+.passwordContent input {
+  border: none;
+  outline: none;
+  width: 200px;
+  color: white;
+  margin-top: 10px;
+  padding: 20px 50px 10px 10px;
+  font-size: 1.1rem;
+  transition: all 200ms linear;
+  background-color: #151824;
+  margin-bottom: 30px;
+  border-radius: 2px;
+}
+
+.seePassword {
+  width: 28px;
+  position: absolute;
+  top: 47px;
+  left: 222px;
+  cursor: pointer;
+  fill: #989caf;
+}
+.hidePassword {
+  width: 28px;
+  position: absolute;
+  cursor: pointer;
+  top: 47px;
+  left: 222px;
+  fill: #989caf;
+  display: none;
+}
+
+.deleteContent {
+  flex-direction: column;
+  position: relative;
+  top: -25px;
+  width: 600px;
+  color: #ccc;
+  display: none;
+  margin-bottom: 30px;
+}
+
+.deleteButton {
+  width: 120px;
+  font-size: 1rem;
+  color: white;
+  background-color: crimson;
+  border: none;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 500ms ease;
+  outline: none;
+}
+
+.deleteButton:hover {
+  background-color: rgb(255, 47, 89);
+}
+.infoDelete,
+.emailStatus,
+.passwordStatus,
+.deleteStatus {
+  animation: none !important;
+}
+
+@keyframes fromTop {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .deleteContent {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .deleteContent {
+    width: auto;
+    padding-right: 10px;
+  }
+  .signedIn {
+    margin-left: 15px !important;
+  }
+}
