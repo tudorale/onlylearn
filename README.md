@@ -1,68 +1,12 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# OnlyLearn
+An open-source platform for learning Web Development for free with over 60 lessons in HTML5, CSS3, Responsive Design.
+This project was finished on December 2020 and started to test my knowledge on React and to help people learn information for free, it has a simple UI/UX, you have to be logged in to start learning and you can learn what lesson you want at any time and you have a text-editor where you can test your knowledge with a fast in browser result of your code.
 
-## Available Scripts
+# Technology
+I used mainly React JS for the code with React Hooks, React Router and other dependencies such as AOS for animations, CodeMirror for the text editor and Firebase for authentication. Good to know that your code from the text-editor will be saved in your local storage.
 
-In the project directory, you can run:
+# Journey
+This application is now on stand-by (Beta version) until new ideas and interest appear, I am willing to host the application with a custom domain in the future and give to people the opportunity to learn information for free. The website is hosted for preview at: https://only-learn-3ff6b.web.app/, but you can learn from there even if is in beta and maybe will appear bugs.
 
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+# Contributions
+I am available to opportunities, if you have an idea or you want to contribute to this application, please be free to make a pull-request or contact me on: tudorbussines77@gmail.com or on my website at: https://tudorale.github.io/portfolio/ and I will reach you out. Also if you have a team of developers and you have a same idea or a same project and you are interested to "buy" the application I am free to help you out.
