@@ -7,7 +7,7 @@ function Register() {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
-  const [buttonStatus, setButtonStatus] = useState("Sign in");
+  const [buttonStatus, setButtonStatus] = useState("Sign Up");
 
 
   useEffect(() => {
